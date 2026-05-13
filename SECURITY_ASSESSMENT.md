@@ -22,6 +22,8 @@
 
 ## 1. Access Control
 
+## 2. Injection
+
 | # | Finding | Severity | Status |
 |---|---------|----------|--------|
 | 1.1 | **Missing Role-Based Access Control (RBAC)** — Without active testing, it is unknown whether the application enforces granular role permissions. An attacker may escalate privileges by manipulating role identifiers in requests (e.g., `role=admin`). | High | Pending Verification |
