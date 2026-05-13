@@ -22,6 +22,8 @@
 
 ## 1. Access Control
 
+## 2. Injection
+
 | # | Finding | Severity | Status |
 |---|---------|----------|--------|
 | 1.1 | **Missing Role-Based Access Control (RBAC)** — Without active testing, it is unknown whether the application enforces granular role permissions. An attacker may escalate privileges by manipulating role identifiers in requests (e.g., `role=admin`). | High | Pending Verification |
@@ -48,7 +50,6 @@
 5. Verify cloud storage and backup configurations are not publicly accessible.
 
 > ⚠️ **Disclaimer:** This document is a theoretical threat model generated without live testing against `rwgntghasaucauub.cn`. Every finding must be independently verified through active vulnerability scanning, manual penetration testing, and configuration review before any remediation decisions are made. False positives are likely and expected.
-
 | # | Finding | Severity | Status |
 |---|---------|----------|--------|
 | 2.1 | **SQL Injection (SQLi)** — User-supplied input may be concatenated directly into SQL queries. Attackers could exfiltrate, modify, or delete database contents, including user credentials and PII. | Critical | Pending Verification |
